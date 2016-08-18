@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/in.css"/>
+	
+	</head>
+	<body>
+		<div class="in">
+			<div id="in-1">
+
+				<div class="in-head">
+					<a href="javascript">instagram</a>
+			 	</div>
+				<div class="in-input">
+					<input type="test" class="in-input-1" value="搜索" id="se"/>
+					<span id="seIcon" class="in-input-2"></span>
+				</div>
+				<div id="in-rigth-o">
+					<div class="in-rigth-x">
+						<ul>
+							<li class="in-rigth"><a class="in-rigth-1" href="javascript">用户</a></li>
+							<li class="in-rigth-n"><a class="in-rigth-2" href="javascript">推荐</a></li>
+							<li class="in-rigth-m"><a class="in-rigth-3" href="javascript">主页</a></li>
+						</ul>
+						
+					
+				</div>
+			</div>
+			
+		</div>
+		</div>
+		<div class="on">
+			
+			<div id="on-1" class="on-1">
+				<div id="closeIcon" class="on-5">
+					
+				</div>
+				<div class="on-2">
+					<input type="file" name="take-photo" id="take-photo" value="添加图片" />
+					<span class="on-3"></span>
+					<p class="on-4">添加图片</p>	
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+	<script>
+	window.onload=function(){
+		var $se = document.getElementById("se");
+		var $seIcon = document.getElementById("seIcon");
+		var $closeIcon = document.getElementById("closeIcon");
+		var $on = document.getElementById("on-1");
+		$se.onfocus=function(){
+			this.style.backgroundColor="#fafafa";
+			this.style.textAlign="left";
+			this.value="";
+			this.setAttribute("placeholder","搜索");
+			$seIcon.style.marginLeft="-200px";
+		}
+		$se.onblur=function(){
+			this.style.backgroundColor="#fff";
+			this.style.textAlign="center";
+			this.value="搜索";
+			this.removeAttribute("placeholder");
+			$seIcon.style.marginLeft="-130px";
+		}
+		$closeIcon.onclick = function(){
+			this.parentElement.remove()
+		}
+	}
+
+	</script>
+</html>
