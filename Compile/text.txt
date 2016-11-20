@@ -1,0 +1,10 @@
+int main(int x){
+int a = 10;
+int b = 2;
+int c = 0;
+int d1 ;
+if(c == 0){
+c = a + b;
+}
+return c;
+}
