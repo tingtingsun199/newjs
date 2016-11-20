@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+       <student 学号="1992121231">
+        <name>张三</name>
+        <score>
+           <Java>95</Java>
+           <Struts>76</Struts>
+           <Hibernate>60</Hibernate>
+       </score>
+     </student>
+     <student 学号="1992121232">
+          <name>李四</name>
+          <score>
+             <Java>78</Java>
+             <Struts>72</Struts>
+             <Hibernate>80</Hibernate>
+         </score>
+</student>
+<student 学号="1992121233">
+       <name>从珊 </name>
+       <score>
+          <Java>69</Java>
+          <Struts>83</Struts>
+          <Hibernate>76</Hibernate>
+       </score>
+</student>
+</students>
